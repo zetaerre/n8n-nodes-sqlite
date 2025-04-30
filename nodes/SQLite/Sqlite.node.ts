@@ -236,6 +236,7 @@ export class Sqlite implements INodeType {
 							throw error;
 						}
 					}
+					break;
 				case 'update':
 					try {
 						const table = this.getNodeParameter('table', 0) as string;
